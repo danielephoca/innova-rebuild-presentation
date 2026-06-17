@@ -11,7 +11,7 @@ export default function Navigation({ current, total, isFullscreen, onFullscreen 
         <div style={{
           height: '100%',
           width: `${((current + 1) / total) * 100}%`,
-          background: '#009883',
+          background: '#0C8870',
           transition: 'width 0.3s ease',
         }} />
       </div>
@@ -27,9 +27,9 @@ export default function Navigation({ current, total, isFullscreen, onFullscreen 
         style={{
           position: 'fixed', top: 16, right: 20, zIndex: 50,
           background: 'transparent',
-          border: '1px solid #009883',
+          border: '1px solid #0C8870',
           borderRadius: 6,
-          color: '#009883',
+          color: '#0C8870',
           padding: '6px 10px',
           cursor: 'pointer',
           display: 'flex', alignItems: 'center',

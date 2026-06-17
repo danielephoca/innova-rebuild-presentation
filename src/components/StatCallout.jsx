@@ -26,7 +26,7 @@ function useCountUp(target, duration = 1200, active = true) {
   return count
 }
 
-export default function StatCallout({ value, label, color = '#009883', active = true }) {
+export default function StatCallout({ value, label, color = '#0C8870', active = true }) {
   const displayValue = useCountUp(value, 1200, active)
 
   return (

@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-innova-green: #009883;
+  --color-innova-green: #0C8870;
   --color-innova-hover: #2DB9A5;
   --color-innova-dark: #007F6D;
   --color-innova-light: #D9F2EF;
@@ -65,5 +65,5 @@ body {
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #009883;
+  background: #0C8870;
 }

@@ -2,13 +2,13 @@ import { FiArrowRight } from 'react-icons/fi'
 
 const variantStyles = {
   primary: {
-    default:  { background: '#009883', color: '#fff', border: 'none' },
+    default:  { background: '#0C8870', color: '#fff', border: 'none' },
     hover:    { background: '#2DB9A5' },
     pressed:  { background: '#007F6D' },
     disabled: { background: '#D9D9D9', color: '#fff', cursor: 'not-allowed' },
   },
   secondary: {
-    default:  { background: '#FFFFFF', color: '#009883', border: 'none' },
+    default:  { background: '#FFFFFF', color: '#0C8870', border: 'none' },
     hover:    { background: '#D9F2EF' },
     pressed:  { background: '#B0E4DD' },
     disabled: { background: '#D9D9D9', color: '#999', cursor: 'not-allowed' },
@@ -16,19 +16,19 @@ const variantStyles = {
   grey: {
     default:  { background: '#999999', color: '#fff', border: 'none' },
     hover:    { background: '#2DB9A5' },
-    pressed:  { background: '#009883' },
+    pressed:  { background: '#0C8870' },
     disabled: { background: '#D9D9D9', color: '#fff', cursor: 'not-allowed' },
   },
   outline: {
-    default:  { background: 'transparent', color: '#009883', border: '1px solid #009883' },
+    default:  { background: 'transparent', color: '#0C8870', border: '1px solid #0C8870' },
     hover:    { background: '#D9F2EF' },
     pressed:  { background: '#B0E4DD' },
     disabled: { background: '#D9D9D9', color: '#999', border: '1px solid #B3B3B3', cursor: 'not-allowed' },
   },
   outlineGrey: {
     default:  { background: 'transparent', color: '#767676', border: '1px solid #767676' },
-    hover:    { background: '#D9F2EF', borderColor: '#009883', color: '#009883' },
-    pressed:  { background: '#B0E4DD', borderColor: '#009883' },
+    hover:    { background: '#D9F2EF', borderColor: '#0C8870', color: '#0C8870' },
+    pressed:  { background: '#B0E4DD', borderColor: '#0C8870' },
     disabled: { background: '#D9D9D9', color: '#999', border: '1px solid #B3B3B3', cursor: 'not-allowed' },
   },
 }

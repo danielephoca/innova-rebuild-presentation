@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-/* ── Curve helper ─────────────────────────────────────────── */
+/* â”€â”€ Curve helper â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 function curvePath(from, to, curvature = 0.1) {
   const [x1, y1] = from
   const [x2, y2] = to
@@ -12,36 +12,36 @@ function curvePath(from, to, curvature = 0.1) {
   return `M ${x1} ${y1} Q ${mx + dy * curvature} ${my - dx * curvature} ${x2} ${y2}`
 }
 
-/* ── Nodes ────────────────────────────────────────────────── */
+/* â”€â”€ Nodes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const NODES = [
-  { id: 'github', label: 'Code + full history', badge: 'GITHUB', sub: 'every change, reviewable', cx: 175, cy: 42, w: 250, h: 56, borderColor: '#009883', delay: 0.1 },
+  { id: 'github', label: 'Code + full history', badge: 'GITHUB', sub: 'every change, reviewable', cx: 175, cy: 42, w: 250, h: 56, borderColor: '#0C8870', delay: 0.1 },
   { id: 'visitors', label: 'Visitors', cx: 775, cy: 40, w: 160, h: 48, borderColor: '#1A3330', delay: 0.9 },
-  { id: 'local', label: 'Local copies', sub: 'each developer’s machine', cx: 130, cy: 210, w: 190, h: 64, borderColor: '#1A3330', delay: 0.3 },
-  { id: 'staging', label: 'Staging & QA', sub: 'safe testing site', cx: 440, cy: 210, w: 220, h: 70, borderColor: '#009883', delay: 0.45 },
-  { id: 'prod', label: 'Production', badge: 'LIVE', sub: 'innova.co', cx: 780, cy: 205, w: 250, h: 88, borderColor: '#009883', borderWidth: 2, fontSize: 16, fontWeight: 600, delay: 0.6 },
+  { id: 'local', label: 'Local copies', sub: 'each developerâ€™s machine', cx: 130, cy: 210, w: 190, h: 64, borderColor: '#1A3330', delay: 0.3 },
+  { id: 'staging', label: 'Staging & QA', sub: 'safe testing site', cx: 440, cy: 210, w: 220, h: 70, borderColor: '#0C8870', delay: 0.45 },
+  { id: 'prod', label: 'Production', badge: 'LIVE', sub: 'innova.co', cx: 780, cy: 205, w: 250, h: 88, borderColor: '#0C8870', borderWidth: 2, fontSize: 16, fontWeight: 600, delay: 0.6 },
   { id: 'replica', label: 'Replica server', badge: 'STANDBY', sub: 'different location', cx: 620, cy: 388, w: 210, h: 66, borderColor: '#1A3330', borderStyle: 'dashed', delay: 1.4 },
-  { id: 'backups', label: 'Backups', badge: 'DAILY', sub: 'off-site copies', cx: 910, cy: 388, w: 190, h: 66, borderColor: '#009883', delay: 1.55 },
+  { id: 'backups', label: 'Backups', badge: 'DAILY', sub: 'off-site copies', cx: 910, cy: 388, w: 190, h: 66, borderColor: '#0C8870', delay: 1.55 },
 ]
 
-/* ── Connections ──────────────────────────────────────────── */
+/* â”€â”€ Connections â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const LINES = [
-  // GitHub → Local (clone)
-  { from: [150, 70], to: [130, 178], color: '#009883', w: 2, curve: 0.05, flow: true, delay: 0.5, flowColor: '#2DB9A5', label: 'clone', lx: -22, ly: 0 },
-  // Local → Staging (build & test)
-  { from: [225, 210], to: [330, 210], color: '#009883', w: 2, curve: 0, flow: true, delay: 0.7, flowColor: '#2DB9A5', label: 'build + test', lx: 0, ly: -12 },
-  // Staging → Production (deploy)
-  { from: [550, 196], to: [655, 188], color: '#009883', w: 2.5, curve: 0.05, flow: true, delay: 0.9, flowColor: '#2DB9A5', label: 'deploy (reviewed)', lx: 0, ly: -14 },
-  // Production → Staging (refresh / safe copy, reverse)
+  // GitHub â†’ Local (clone)
+  { from: [150, 70], to: [130, 178], color: '#0C8870', w: 2, curve: 0.05, flow: true, delay: 0.5, flowColor: '#2DB9A5', label: 'clone', lx: -22, ly: 0 },
+  // Local â†’ Staging (build & test)
+  { from: [225, 210], to: [330, 210], color: '#0C8870', w: 2, curve: 0, flow: true, delay: 0.7, flowColor: '#2DB9A5', label: 'build + test', lx: 0, ly: -12 },
+  // Staging â†’ Production (deploy)
+  { from: [550, 196], to: [655, 188], color: '#0C8870', w: 2.5, curve: 0.05, flow: true, delay: 0.9, flowColor: '#2DB9A5', label: 'deploy (reviewed)', lx: 0, ly: -14 },
+  // Production â†’ Staging (refresh / safe copy, reverse)
   { from: [655, 224], to: [550, 230], color: '#1A3330', w: 1.5, curve: 0.05, flow: true, delay: 1.1, flowColor: '#A8C7C2', label: 'safe copy down', lx: 0, ly: 18 },
-  // Visitors → Production (live traffic)
-  { from: [775, 64], to: [780, 161], color: '#009883', w: 2.5, curve: 0, flow: true, delay: 1.0, flowColor: '#2DB9A5', label: 'live traffic', lx: 64, ly: 0 },
-  // Production → Replica (sync + standby)
+  // Visitors â†’ Production (live traffic)
+  { from: [775, 64], to: [780, 161], color: '#0C8870', w: 2.5, curve: 0, flow: true, delay: 1.0, flowColor: '#2DB9A5', label: 'live traffic', lx: 64, ly: 0 },
+  // Production â†’ Replica (sync + standby)
   { from: [725, 249], to: [675, 355], color: '#1A3330', w: 1.5, curve: 0.12, flow: true, delay: 1.6, flowColor: '#A8C7C2', label: 'live sync', lx: -34, ly: 0 },
-  // Production → Backups (daily backup)
-  { from: [840, 249], to: [905, 355], color: '#009883', w: 2, curve: 0.1, flow: true, delay: 1.7, flowColor: '#2DB9A5', label: 'daily backup', lx: 66, ly: -4 },
+  // Production â†’ Backups (daily backup)
+  { from: [840, 249], to: [905, 355], color: '#0C8870', w: 2, curve: 0.1, flow: true, delay: 1.7, flowColor: '#2DB9A5', label: 'daily backup', lx: 66, ly: -4 },
 ]
 
-/* ── Legend ───────────────────────────────────────────────── */
+/* â”€â”€ Legend â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 const LEGEND = [
   { color: '#2DB9A5', dashed: false, label: 'Code & deploy flow' },
   { color: '#A8C7C2', dashed: false, label: 'Copy & sync' },
@@ -56,7 +56,7 @@ export default function SlideArchitecture({ isActive }) {
           initial={{ opacity: 0, y: 20 }}
           animate={isActive ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4, ease: 'easeOut' }}
-          style={{ fontFamily: 'Poppins', fontWeight: 600, fontSize: 13, letterSpacing: 1.5, textTransform: 'uppercase', color: '#009883', marginBottom: 8 }}
+          style={{ fontFamily: 'Poppins', fontWeight: 600, fontSize: 13, letterSpacing: 1.5, textTransform: 'uppercase', color: '#0C8870', marginBottom: 8 }}
         >
           The architecture
         </motion.div>
@@ -103,7 +103,7 @@ export default function SlideArchitecture({ isActive }) {
 
                   {ln.flow && (
                     <motion.path
-                      d={d} stroke={ln.flowColor || '#009883'} strokeWidth={ln.w}
+                      d={d} stroke={ln.flowColor || '#0C8870'} strokeWidth={ln.w}
                       strokeDasharray="8 16" fill="none"
                       initial={{ opacity: 0, strokeDashoffset: 0 }}
                       animate={isActive ? { opacity: 0.85, strokeDashoffset: -24 } : {}}
@@ -151,7 +151,7 @@ export default function SlideArchitecture({ isActive }) {
               }}
             >
               {n.badge && (
-                <span style={{ fontFamily: 'Poppins', fontSize: 9, fontWeight: 600, color: n.badgeColor || '#009883', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 2 }}>
+                <span style={{ fontFamily: 'Poppins', fontSize: 9, fontWeight: 600, color: n.badgeColor || '#0C8870', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 2 }}>
                   {n.badge}
                 </span>
               )}

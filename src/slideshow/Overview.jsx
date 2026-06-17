@@ -41,7 +41,7 @@ export default function Overview({ isOpen, currentIndex, onSelect }) {
                 whileHover={{ scale: 1.04 }}
                 style={{
                   background: i === currentIndex ? '#132420' : '#0D1A18',
-                  border: `2px solid ${i === currentIndex ? '#009883' : '#1A3330'}`,
+                  border: `2px solid ${i === currentIndex ? '#0C8870' : '#1A3330'}`,
                   borderRadius: 8,
                   padding: '12px 8px',
                   cursor: 'pointer',
@@ -58,7 +58,7 @@ export default function Overview({ isOpen, currentIndex, onSelect }) {
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   overflow: 'hidden',
                 }}>
-                  <span style={{ fontFamily: 'Poppins', fontSize: 20, color: '#009883', fontWeight: 700 }}>
+                  <span style={{ fontFamily: 'Poppins', fontSize: 20, color: '#0C8870', fontWeight: 700 }}>
                     {i + 1}
                   </span>
                 </div>

@@ -14,8 +14,8 @@ export default function CompareTable({ rows = [], active = true }) {
         </div>
         <div style={{
           fontFamily: 'Poppins', fontWeight: 600, fontSize: 14,
-          color: '#009883', textAlign: 'center', padding: '8px 16px',
-          borderBottom: '2px solid #009883',
+          color: '#0C8870', textAlign: 'center', padding: '8px 16px',
+          borderBottom: '2px solid #0C8870',
         }}>
           With Innova AI
         </div>

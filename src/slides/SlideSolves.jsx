@@ -26,11 +26,11 @@ export default function SlideSolves({ isActive }) {
             initial={{ opacity: 0, y: 18, scale: 0.97 }}
             animate={isActive ? { opacity: 1, y: 0, scale: 1 } : {}}
             transition={{ duration: 0.4, ease: 'easeOut', delay: 0.1 + i * 0.09 }}
-            whileHover={{ scale: 1.02, borderColor: '#009883' }}
+            whileHover={{ scale: 1.02, borderColor: '#0C8870' }}
             style={{ background: '#0D1A18', border: '1px solid #1A3330', borderRadius: 12, padding: '24px 24px' }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
-              <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#009883' }} />
+              <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#0C8870' }} />
               <div style={{ fontFamily: 'Poppins', fontWeight: 600, fontSize: 19, color: '#F0FAF8' }}>{p.t}</div>
             </div>
             <div style={{ fontFamily: 'Poppins', fontWeight: 400, fontSize: 14, color: '#A8C7C2', lineHeight: 1.55 }}>{p.d}</div>

@@ -7,7 +7,7 @@ export default function SlideVision({ isActive }) {
         initial={{ opacity: 0, y: 20 }}
         animate={isActive ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.4, ease: 'easeOut' }}
-        style={{ fontFamily: 'Poppins', fontWeight: 600, fontSize: 13, letterSpacing: 1.5, textTransform: 'uppercase', color: '#009883', marginBottom: 18 }}
+        style={{ fontFamily: 'Poppins', fontWeight: 600, fontSize: 13, letterSpacing: 1.5, textTransform: 'uppercase', color: '#0C8870', marginBottom: 18 }}
       >
         The vision
       </motion.div>

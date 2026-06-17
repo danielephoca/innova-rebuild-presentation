@@ -24,8 +24,8 @@ export default function PresenterNotes({ isOpen, currentIndex, onClose }) {
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-            <span style={{ fontFamily: 'Poppins', fontWeight: 600, fontSize: 14, color: '#009883' }}>
-              Presenter Notes — {meta?.title}
+            <span style={{ fontFamily: 'Poppins', fontWeight: 600, fontSize: 14, color: '#0C8870' }}>
+              Presenter Notes â€” {meta?.title}
             </span>
             <button
               onClick={onClose}
@@ -34,7 +34,7 @@ export default function PresenterNotes({ isOpen, currentIndex, onClose }) {
                 fontFamily: 'Poppins', fontSize: 20, cursor: 'pointer',
               }}
             >
-              ×
+              Ã—
             </button>
           </div>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 8 }}>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import SlideHeader from '../components/SlideHeader'
 
-const sites = ['innova.co', 'nextac.com', 'aioair', 'osmofancoils', 'loophp', '…and the next one']
+const sites = ['innova.co', 'nextac.com', 'aioair', 'osmofancoils', 'loophp', 'â€¦and the next one']
 
 export default function SlideReuse({ isActive }) {
   return (
@@ -20,8 +20,8 @@ export default function SlideReuse({ isActive }) {
             animate={isActive ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.35, ease: 'easeOut', delay: 0.15 + i * 0.08 }}
             style={{
-              background: i === 0 ? '#009883' : '#0D1A18',
-              border: `1px solid ${i === 0 ? '#009883' : '#1A3330'}`,
+              background: i === 0 ? '#0C8870' : '#0D1A18',
+              border: `1px solid ${i === 0 ? '#0C8870' : '#1A3330'}`,
               borderRadius: 999, padding: '12px 26px',
               fontFamily: 'Poppins', fontWeight: 600, fontSize: 16,
               color: '#F0FAF8',

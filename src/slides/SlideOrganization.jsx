@@ -5,7 +5,7 @@ const rows = [
   { thing: 'A real feature (a calculator, a locator)', home: 'Its own self-contained module' },
   { thing: 'Small shared tweaks and glue', home: 'One shared core module' },
   { thing: 'How the site looks', home: 'The theme' },
-  { thing: 'Always-on safety guards', home: 'Protected, can’t be switched off' },
+  { thing: 'Always-on safety guards', home: 'Protected, canâ€™t be switched off' },
   { thing: 'Business logic', home: 'Never hidden in the database' },
 ]
 
@@ -32,7 +32,7 @@ export default function SlideOrganization({ isActive }) {
             }}
           >
             <span style={{ fontFamily: 'Poppins', fontWeight: 400, fontSize: 15, color: '#A8C7C2' }}>{r.thing}</span>
-            <span style={{ color: '#009883', fontSize: 18 }}>→</span>
+            <span style={{ color: '#0C8870', fontSize: 18 }}>â†’</span>
             <span style={{ fontFamily: 'Poppins', fontWeight: 600, fontSize: 15, color: '#F0FAF8', textAlign: 'right' }}>{r.home}</span>
           </motion.div>
         ))}

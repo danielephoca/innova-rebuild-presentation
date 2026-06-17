@@ -12,7 +12,7 @@ export default function SlideHeader({ kicker, title, subtitle, align = 'center' 
         <div style={{
           fontFamily: 'Poppins', fontWeight: 600, fontSize: 13,
           letterSpacing: 1.5, textTransform: 'uppercase',
-          color: '#009883', marginBottom: 12,
+          color: '#0C8870', marginBottom: 12,
         }}>
           {kicker}
         </div>

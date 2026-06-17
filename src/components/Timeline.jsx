@@ -5,7 +5,7 @@ export default function Timeline({ phases = [], active = true }) {
     <div style={{ display: 'flex', alignItems: 'flex-start', gap: 0, width: '100%' }}>
       {phases.map((phase, i) => {
         const isActive = phase.status === 'active'
-        const color = isActive ? '#009883' : '#A8C7C2'
+        const color = isActive ? '#0C8870' : '#A8C7C2'
 
         return (
           <motion.div
@@ -30,7 +30,7 @@ export default function Timeline({ phases = [], active = true }) {
             {/* Dot */}
             <div style={{
               width: 24, height: 24, borderRadius: '50%',
-              background: isActive ? '#009883' : '#132420',
+              background: isActive ? '#0C8870' : '#132420',
               border: `2px solid ${color}`,
               zIndex: 1,
               flexShrink: 0,

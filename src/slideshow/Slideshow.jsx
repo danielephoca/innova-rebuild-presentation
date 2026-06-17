@@ -190,7 +190,7 @@ export default function Slideshow() {
               left: '50%',
               transform: 'translateX(-50%)',
               background: '#0D1A18',
-              border: '1px solid #009883',
+              border: '1px solid #0C8870',
               borderRadius: 8,
               padding: '10px 20px',
               fontFamily: 'Poppins',
